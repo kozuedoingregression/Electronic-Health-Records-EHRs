@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>EHRs | Records</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="./createandaccess.js"></script>
+  <link rel="stylesheet" href="style/records.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="EHRs.html">Home</a></li>
+        <li><a href="patientadd.html">Patients</a></li>
+        <li><a href="records.html">Records</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="records">
+    <h2>Access Records</h2>
+    <label>Patient ID:</label>
+    <input type="text" id="patient-id" required>
+
+    <section>
+      <div id="personal-information">
+
+      </div>
+      <table>
+        <tbody id="info"></tbody>
+      </table>
+      <br>
+      <div id="record-information"></div>
+      <table>
+        <tbody id="record"></tbody>
+        
+      </table>
+    </section>
+    <button id="deploy-record-button" onclick="accessrecord()">Access</button>
+  </div>
+  <div class="container">
+    <h1>Create Record</h1>
+    <div class="form-group">
+      <label>Hospital Name:</label>
+      <input type="text" id="hospital-name" required>
+
+      <label>Patient ID:</label>
+      <input type="text" id="p-id" required>
+
+      <label>Doctor Name:</label>
+      <input type="text" id="doctor-name" required>
+
+      <label>Speciality:</label>
+      <input type="text" id="speciality" required>
+
+      <label>Referred By:</label>
+      <input type="text" id="referred-by" required>
+
+      <label>Complaints:</label>
+      <input type="text" id="complaints" required>
+
+      <label>Investigation Advise:</label>
+      <input type="text" id="investigatin-advise" required>
+
+      <label>Medicine Advice:</label>
+      <input type="text" id="medicine-advice" required>
+    </div>
+    <button id="deploy-record-button" onclick="addrecord()">Deploy Record</button>
+    </form>
+  </div>
+  <footer>
+    <p>&copy; 2023 Electronic Health Records | Sashank Thapa</p>
+  </footer>
+</body>
+
+</html>

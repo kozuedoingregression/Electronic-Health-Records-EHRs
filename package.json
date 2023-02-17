@@ -1,0 +1,12 @@
+{
+  "name": "electronic-health-records",
+  "version": "1.0.0",
+  "description": "Blockchain Electronic Health Record System Powered By Ethereum",
+  "main": "truffle-config.js",
+  
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "truffle": "5.7.4",
+    "truffle-contract": "3.0.6"
+  }
+}

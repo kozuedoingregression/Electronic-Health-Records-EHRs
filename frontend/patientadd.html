@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>EHRs | Patients</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="./connectandregister.js" ></script>
+  <link rel="stylesheet" href="style/patients.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="EHRs.html">Home</a></li>
+        <li><a href="patientadd.html">Patients</a></li>
+        <li><a href="records.html">Records</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="create-record">
+      <h2>Patient Registration</h2>
+      <form>
+        <div>
+        <label >Patient Name</label>
+        <input type="text" id="patient-name" name="patient-name" placeholder="Enter Patient Name" />
+        <label >Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter Age" />
+        <label >Gender</label>
+        <select id="gender" >
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label >Mobile Number</label>
+        <input type="number" id="mobile-num" name="mobilenum" placeholder="Enter Mobile Number" />
+        <label >Blood Type</label>
+        <select id="blood-type">
+          <option value="">Select Blood Type</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+        <label>Location</label>
+        <input type="text" id="location" placeholder="Enter Location" />
+        </div>
+        
+      </form>
+      <button id="button-connect" onclick="connectWallet()">Connect Wallet</button>
+        <button id="button-register" onclick="addpatient()">Register</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Electronic Health Records | Sashank Thapa</p>
+  </footer>
